@@ -1,7 +1,7 @@
 package main
 
 import (
-	"server/controller"
+	todos "server/controller"
 	"server/database"
 	"time"
 
@@ -34,8 +34,8 @@ func main() {
 		AllowCredentials: true,
 		MaxAge:           24 * time.Hour,
 	}))
-	r.GET("/todos", controller.TodosIndex)
-	r.POST("/todos", controller.TodoNew)
-	r.DELETE("/todos/:id", controller.TodoDelete)
+	r.GET("/todos", todos.Index)
+	r.POST("/todos", todos.Create)
+	r.DELETE("/todos/:id", todos.Delete)
 	r.Run()
 }
