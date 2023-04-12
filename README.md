@@ -55,3 +55,10 @@ $ cd server/kotlin
 $ ./gradlew installDist
 $ ./gradlew run
 ```
+
+### Swift (Vapor)
+
+```bash
+$ cd server/swift
+$ swift run
+```
