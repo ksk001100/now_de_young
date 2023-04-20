@@ -10,9 +10,9 @@
 ## フロントエンドアプリの起動
 
 ```bash
-$ cd front
+$ cd client
 $ npm install
-$ npm start
+$ npm run dev
 ```
 
 ## バックエンドアプリの起動
